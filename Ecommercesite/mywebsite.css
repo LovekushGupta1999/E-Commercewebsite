@@ -1,0 +1,556 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+
+
+
+
+
+#mynavbar{
+    display: flex;
+   
+    width: 100%;
+    gap: 105px;
+    margin: 0%;
+    margin-bottom: 0%;
+    padding-left: 0%;
+    padding-bottom: 0%;
+list-style-type: none;
+z-index: 999;
+align-items:center;
+}
+
+#myheader{
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    align-items: center;
+}
+
+
+#mynavbar nav {
+    padding-left: 5px;
+    display: flex;
+    gap: 60px;
+}
+#mynavbar .navitems{
+    margin-left: 40px;
+}
+#mynavbar .navitems li a:hover{
+    border-bottom: 2px solid black;
+
+}
+#mynavbar .navitems1{
+    margin-right: 0px;
+    padding: 0px;
+}
+
+#mynavbar nav li img{
+    width:100px;
+}
+#mynavbar nav li a{
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+
+}
+  
+#smallnav .div2{
+    color: white;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    z-index: 999999;
+  }
+  #smallnav .div1{
+    
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: orangered;
+  }
+  #smallnav .div1 img{
+    width: 100px;
+  }
+
+  #smallnav .div1:hover{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+  }
+  #smallnav{
+    background-color: rgb(24, 25, 25);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    
+    display: none;
+    
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  #shownav{
+    height: 120vh;
+    width: 500px;
+    background-color: rgba(24, 25, 25, 0.637);
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    z-index: 20;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  #shownav .div1 img{
+    width: 150px;
+  }
+  @media (max-width:1025px){
+    #myheader #mynavbar{
+        display: none;
+    }
+
+    #smallnav{
+        display: flex;
+    }
+    #shownav{
+        height: 100vh;
+        width: 100%;
+        z-index: 99999;
+        justify-content: center;
+        text-align: center;
+    }
+    #shownav .div1{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 27px;
+        color: orangered;
+        padding: 30px;
+    }
+    #shownav div a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+    #shownav div{
+        padding: 40px;
+        margin-left: 10px;
+    }
+    #input1:checked ~ #shownav{
+        left: 0px;
+        transition: left 0.8s;
+    }
+    #support{
+        justify-content: space-evenly;
+    }
+    
+  }
+  @media (max-width:769px){
+    #myheader #mynavbar{
+        display: none;
+    }
+    #smallnav{
+        display: flex;
+    }
+    #shownav{
+      height: 100vh;
+      width: 100%;
+      z-index: 99999;
+      justify-content: center;
+      text-align: center;
+    }
+    #shownav .div1{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        color: orangered;
+        padding: 20px;
+    }
+    #shownav div a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+    #shownav div{
+        padding: 27px;
+        margin-left: 10px;
+    }
+    #input1:checked ~ #shownav{
+        left: 0px;
+        transition: left 1s;
+    }
+  
+  }
+  @media (max-width:431px){
+   
+    #myheader #mynavbar{
+        display: none;
+    }
+    #smallnav{
+        display: flex;
+    }
+    #shownav{
+      height: 100vh;
+      width: 100%;
+      z-index: 99999;
+      justify-content: center;
+      text-align: center;
+    }
+    #shownav .div1{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        color: orangered;
+        padding: 20px;
+    }
+    #shownav div a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+    #shownav div{
+        padding: 27px;
+        margin-left: 10px;
+    }
+    #input1:checked ~ #shownav{
+        left: 0px;
+        transition: left 1s;
+    }
+    
+  
+    
+  }
+  
+
+#hero{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0%;
+    margin-top: 0%;
+    background-image: url(./images/surprised-happy-girl-pointing-left-recommend-product-advertisement_176420-20189.avif);
+ background-repeat: no-repeat;
+ background-size:contain ;
+  background-size: 100%;
+
+
+
+}
+#hero div{
+    height: 80%;
+
+    margin-bottom: 100px;
+    position: relative;
+    top: 90px;
+}
+
+#hero div section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+#hero div section h4{
+    font-size: 50px;
+    padding: 10px;
+ 
+   
+    
+} 
+#hero div section h5{
+
+    border: 2px solid black;
+    background-color:skyblue;
+    border-radius:5px;
+    padding: 5px;
+
+    
+} 
+#hero div h1{
+    font-size: 120px;
+    padding: 0%;
+    margin: 0%;
+    
+}
+#hero div h2{
+    font-size: 70px;
+    padding: 0%;
+    margin: 0%;
+    font-style: italic;
+}
+#hero div p{
+    font-size: 20px;
+    padding: 0%;
+    margin: 0%;
+}
+#hero div nav img{ 
+    width: 80px;
+    margin-right: 40px;
+
+}
+
+
+#portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    /* margin-top: 300px; */
+   
+
+    justify-content: center;
+    gap: 120px;
+    /* padding: 30PX; */
+    }
+
+    
+    #portfolio section {
+
+        color:red;
+    Background-image : url(./images/imageswatch.jfif);
+    Background-size : cover; 
+   Background-repeat: non-repeat;
+   width:100px;
+    padding:30px;
+    }
+
+    #portfolio span{
+        color: rgb(0, 255, 255);
+        width:100px;
+        
+        Background-image : url(./images/rendering-smart-home-device_23-2151039302watch.avif);
+       Background-size : cover;
+       Background-repeat: non-repeat;
+       padding-top: 30px;
+       padding:30px; 
+       }
+       
+
+       #portfolio nav {
+        width:100px;
+        color: blue;
+        Background-image : url(./images/Models-Setting-Grooming-Goals-For-Men-10_6058525cd276c.jpeg);
+       Background-size : cover;
+       Background-repeat : non-repeat;
+       padding: 30px;
+       }
+
+       #portfolio div{
+        color: brown;
+        Background-image : url(./images/shoes.jfif);
+       Background-size : cover;
+       Background-repeat : non-repeat;
+       } 
+
+       #item {
+     
+        margin-top: 25px;
+       }
+
+
+ #category {
+   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 40px;
+    justify-content: space-around;
+ }
+ #category span h3{
+    text-align: center;
+   
+ }
+ 
+#items h3{
+        text-align: center;
+}
+
+ 
+ #products{
+   
+    gap: 30px;
+    
+    padding: 20px;
+
+ }
+
+ #popular div {
+    display:grid;
+    grid-template-columns:repeat(auto-fill, 400px);
+    grid-gap: 2px;
+    justify-content: center;
+    /* text-align: center; */
+} 
+
+ #products div {
+    background-color: rgba(127, 255, 212, 0);
+    padding-block: 15px;
+ }
+ #products span h3{
+    text-align: center;
+
+ }
+ #products span h2{
+    text-align: center;
+
+ }
+ #products span p{
+    text-align: center;
+
+ }
+
+ #products div a img{  width: 200px;
+    
+
+ }
+ #heading {
+    text-align: center;
+ }
+ #service{
+    text-align: center;
+ }
+ #support{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-gap: 30px;
+    
+   
+    
+      }
+#support div {
+    
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#support div span{
+     text-align: center;
+    padding: 15px;
+}
+#subscribe{
+    background-color: #b2b2b2;
+    text-align: center;
+}
+#subscribe h4{
+    background-color: #b2b2b2;
+}
+#contact {
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+}
+#contact div{
+    padding: 40px;
+    text-align: left;
+}
+#rights{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+ #rights section{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+   
+}
+#rights section img{
+    width:30px;
+   
+    
+}
+
+#mynavbar .options{
+    display: none;
+
+}
+
+ @media (max-width:431px){
+    
+    *{
+        padding: 0px;
+        margin: 0px;
+        /* overflow-x: hidden; */
+    }
+ 
+
+  
+ 
+
+   #hero{
+    width: 100%;
+    height: 300px;
+
+        margin-top: 60px;
+    
+      }
+      #hero div{
+        position: absolute;
+        top: 60px;
+      }
+   #hero div p{
+    font-size:16px ;
+    margin-top: 40px;
+   }
+   #hero div h2{
+    font-size:19px ;
+    margin: 4px;
+   }
+   #hero div h1{
+    font-size:16px ;
+    margin: 4px;
+   }
+   #hero div nav img{ 
+    width: 40px;
+    margin-right: 4px;
+
+}
+#hero div section h4{
+    font-size: 23px;
+    padding: 2px;
+ 
+}
+#portfolio section {
+    width: 200px;
+    height: 200px;
+}
+#portfolio nav{
+    width: 200px;
+    height: 200px;
+}
+#portfolio span{
+    width: 200px;
+    height: 200px;
+}
+#portfolio div {
+    width: 200px;
+    height: 200px;
+}
+#products div a img{  width: 300px;
+     
+
+}
+#contact{
+    justify-content: center;
+}
+   
+}
